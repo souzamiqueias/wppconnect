@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  waha:
+    image: wppconnect-team/wppconnect:latest
+    ports:
+      - '3000:3000'
+    environment:
+      - WAHA_MEDIA_STORAGE=LOCAL
+      - WAHA_ZIPPER=ZIPUNZIP
+      - WHATSAPP_API_SCHEMA=http
+      - WHATSAPP_DEFAULT_ENGINE=WEBJS
